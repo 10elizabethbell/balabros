@@ -1,0 +1,32 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-radius",
+        "value": "6px",
+        "createdAt": "2026-10-21T14:15:41.748Z",
+        "reason": "Claude: focus-ring corner only, not a surface radius (same as DPG reference)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "15px",
+        "createdAt": "2026-10-21T14:15:41.811Z",
+        "reason": "Claude: small helper/error text under the form; DESIGN.md generator omitted it"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "26px",
+        "createdAt": "2026-10-21T14:15:41.876Z",
+        "reason": "Claude: desktop wordmark size in header; DESIGN.md generator omitted it"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "22px",
+        "createdAt": "2026-10-21T14:15:41.940Z",
+        "reason": "Claude: desktop step titles, on DESIGN.md's documented 20-22px title step"
+      }
+    ]
+  }
+}
