@@ -10,7 +10,7 @@
 <meta property="og:title" content="Balabros · Exterior repairs done right in Cherry Hill">
 <meta property="og:description" content="Family-owned exterior repairs: decks, gutters, siding, roofing and more. Call or text (856) 952-3135.">
 <meta property="og:url" content="https://10elizabethbell.github.io/balabros/">
-<meta property="og:image" content="https://10elizabethbell.github.io/balabros/og.png">
+<meta property="og:image" content="https://10elizabethbell.github.io/balabros/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -117,13 +117,13 @@ section{padding:64px 0}
 .row:focus-visible .arrow{background:var(--cedar);color:var(--ink);outline:3px solid var(--cedar);outline-offset:3px}
 
 /* ---------- Work ---------- */
-.work .wrap{display:grid;gap:28px}
+.work .wrap{display:grid;gap:24px}
 .work-photo{width:100%;height:auto;max-width:560px;aspect-ratio:1;object-fit:cover;border-radius:var(--r-card);background:var(--field)}
 .fb{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:76px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--navy);color:var(--on-dark);text-decoration:none;font:400 clamp(19px,5.2vw,22px)/1.2 var(--display);max-width:560px}
 .fb:hover,.fb:focus-visible{outline:none;box-shadow:none}
 .fb .lbl{display:flex;align-items:center;gap:14px}
 .fb .lbl svg{width:28px;height:28px;flex:none;color:var(--cedar)}
-.fb:focus-visible .arrow{background:var(--cedar);color:var(--ink);outline:3px solid var(--focus);outline-offset:3px}
+.fb:focus-visible .arrow{background:var(--cedar);color:var(--ink);outline:3px solid var(--cedar);outline-offset:3px}
 
 /* ---------- How it works ---------- */
 .steps{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:24px;counter-reset:s}
@@ -161,7 +161,6 @@ form .btn-primary:focus-visible{outline:2px solid var(--focus);outline-offset:2p
 @media (max-width:380px){.chips label{padding:0 14px}}
 
 /* ---------- Close ---------- */
-.close .who{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--on-dark-soft)}
 .bigtel{display:inline-flex;align-items:center;gap:12px;margin-top:28px;font:400 clamp(30px,9vw,52px)/1 var(--display);text-decoration:none;color:var(--on-dark);min-height:56px;white-space:nowrap}
 .bigtel svg{width:.8em;height:.8em;flex:none;color:var(--cedar)}
 .area{margin-top:22px;max-width:40ch}
@@ -200,7 +199,10 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
 }
 @media (min-width:1024px){
   .work .wrap{grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-  .work .fb{margin-top:28px}
+  .work .wrap{grid-template-areas:"img h" "img fb";grid-template-rows:1fr auto;row-gap:0}
+  .work-photo{grid-area:img}
+  .work .work-h{grid-area:h;align-self:end}
+  .work .fb{grid-area:fb;align-self:start;margin-top:24px}
   .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
   .ask .head{position:sticky;top:40px}
   .close .wrap{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
@@ -268,7 +270,7 @@ FORM: calm band system with one real photo; service rows on navy; deck photo sho
   <div class="wrap">
     <div class="head rise">
       <span class="eyebrow">What we fix</span>
-      <h2 id="h-svc">From the gutters <span class="accent">down to the deck.</span></h2>
+      <h2 id="h-svc">From the gutters <span class="accent">down to the deck</span></h2>
     </div>
     <ul class="rows">
       <li class="rise"><a class="row" href="#ask" data-service="Deck">Decks, repaired or built<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
@@ -287,20 +289,18 @@ FORM: calm band system with one real photo; service rows on navy; deck photo sho
 
 <section class="on-paper work" aria-labelledby="h-work">
   <div class="wrap">
+    <h2 id="h-work" class="work-h rise">Our work, up close</h2>
     <img class="work-photo rise" src="img/deck-800.webp" srcset="img/deck-800.webp 800w, img/deck.webp 1200w" sizes="(min-width:1024px) 540px, calc(100vw - 40px)" alt="A two-level deck with brown composite boards, white posts and black metal railings, with stairs down to the lawn" width="1200" height="1200" loading="lazy" decoding="async">
-    <div class="rise">
-      <h2 id="h-work">Our work, up close.</h2>
-      <a class="fb" href="https://www.facebook.com/profile.php?id=61563918684986" rel="noopener" style="margin-top:24px">
+    <a class="fb rise" href="https://www.facebook.com/profile.php?id=61563918684986" rel="noopener">
         <span class="lbl"><svg aria-hidden="true"><use href="#i-fb"/></svg>Click to see more of our work.</span>
-        <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
-      </a>
-    </div>
+      <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+    </a>
   </div>
 </section>
 
 <section class="on-deep how" aria-labelledby="h-how">
   <div class="wrap">
-    <h2 id="h-how" class="rise">How it <span class="accent">works.</span></h2>
+    <h2 id="h-how" class="rise">How it <span class="accent">works</span></h2>
     <ol class="steps">
       <li class="rise"><div><b>Text or call us.</b><span>Tell us what needs fixing. A photo helps.</span></div></li>
       <li class="rise"><div><b>Get your estimate.</b><span>We look at the job and tell you plainly what it takes.</span></div></li>
@@ -317,7 +317,7 @@ FORM: calm band system with one real photo; service rows on navy; deck photo sho
       <p class="lede">Not on our list? Ask anyway.</p>
     </div>
     <form id="fixForm" class="rise" novalidate>
-      <fieldset class="field" id="f-job">
+      <fieldset class="field" id="f-job" aria-describedby="e-job">
         <legend>What's it about?</legend>
         <div class="chips">
           <input type="radio" name="job" id="j-deck" value="Deck"><label for="j-deck">Deck</label>
@@ -332,12 +332,12 @@ FORM: calm band system with one real photo; service rows on navy; deck photo sho
           <input type="radio" name="job" id="j-door" value="Doors"><label for="j-door">Doors</label>
           <input type="radio" name="job" id="j-other" value="Something else"><label for="j-other">Something else</label>
         </div>
-        <p class="err" id="e-job">Pick the closest one, or "Something else".</p>
+        <p class="err" id="e-job" role="alert">Pick the closest one, or "Something else".</p>
       </fieldset>
       <div class="field" id="f-name">
         <label for="name">Your name</label>
         <input type="text" id="name" name="name" autocomplete="name" maxlength="60" placeholder="First name is fine" aria-describedby="e-name">
-        <p class="err" id="e-name">Add your name so we know who's texting.</p>
+        <p class="err" id="e-name" role="alert">Add your name so we know who's texting.</p>
       </div>
       <div class="field">
         <label for="where">Your town <small>(optional)</small></label>
@@ -358,7 +358,6 @@ FORM: calm band system with one real photo; service rows on navy; deck photo sho
   <div class="wrap">
     <div class="rise">
       <h2 id="h-close">Balabros</h2>
-      <p class="who">Family owned and operated.</p>
       <p class="area">Based in Cherry Hill, NJ. Not sure we cover your street? Call and ask.</p>
     </div>
     <a class="bigtel rise" href="tel:+18569523135"><svg aria-hidden="true"><use href="#i-phone"/></svg>(856) 952-3135</a>

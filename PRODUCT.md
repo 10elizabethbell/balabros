@@ -6,7 +6,7 @@
 
 ## Users
 - **Homeowners around Cherry Hill, NJ** with an exterior problem: rotted boards, clogged gutters, a worn deck, damaged siding or roof. They usually reach the page from Facebook on a phone, inside Facebook's in-app browser. (Area from the business's own Facebook page title "Balabros | Cherry Hill NJ", seen 2026-10-21; towns served beyond that are unknown.)
-- **The owner(s)** of Balabros, who first see the page as a free gift from Ellie. It must read as their real website.
+- **The owner(s)** of Balabros. The page must read as their real website.
 
 ## Purpose
 Let a homeowner see in one phone screen who Balabros is, what they fix, and how to ask for an estimate; then send a text or call.
