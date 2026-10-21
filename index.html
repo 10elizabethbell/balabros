@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Balabros · Exterior home repairs · Cherry Hill, NJ</title>
+<meta name="description" content="Balabros is a family-owned exterior repair crew in Cherry Hill, NJ: decks, gutters, siding, roofing, chimneys, windows and doors. Call or text (856) 952-3135.">
+<meta name="theme-color" content="#f4f6fb">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Balabros · Exterior repairs done right in Cherry Hill">
+<meta property="og:description" content="Family-owned exterior repairs: decks, gutters, siding, roofing and more. Call or text (856) 952-3135.">
+<meta property="og:url" content="https://10elizabethbell.github.io/balabros/">
+<meta property="og:image" content="https://10elizabethbell.github.io/balabros/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap">
+<link rel="preload" as="image" href="img/deck-800.webp" imagesrcset="img/deck-800.webp 800w, img/deck.webp 1200w" imagesizes="100vw">
+<style>
+/* ---------- Tokens ---------- */
+:root{
+  /* off-white paper, slate navy from the deck's black rails, cedar from the deck boards */
+  --paper:#f4f6fb;       /* page ground */
+  --card:#ffffff;
+  --field:#e6ecf5;       /* form fields and chips on the white card */
+  --ink:#13213a;         /* headings, text on cedar */
+  --body:#2a3a4c;        /* running text on light */
+  --soft:#4a5868;        /* secondary text on light */
+  --navy:#1d3150;        /* services, close */
+  --deep:#131f35;        /* how it works, footer (line texture) */
+  --on-dark:#f4f7fb;
+  --on-dark-soft:#c9d4e4;
+  --cedar:#e8a54b;       /* the one accent: fills only; text on it is --ink (7.6:1) */
+  --cedar-2:#f0b866;
+  --cedar-ink:#8a4c0e;   /* cedar as text on light (6.2:1) */
+  --line:rgba(19,33,58,.12);
+  --focus:#2f5d9e;       /* form hover/focus outline, distinct from the cedar fill */
+  --error:#b3261e;
+  --texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);
+  --display:"Cal Sans","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --text:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --r-card:24px;--r-field:10px;--pill:999px;
+  --gutter:20px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--paper)}
+body{margin:0;font:16px/1.7 var(--text);color:var(--body);background:var(--paper)}
+::selection{background:var(--cedar);color:var(--ink)}
+img,svg{display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.on-navy :focus-visible,.on-deep :focus-visible,.hero :focus-visible,footer :focus-visible{outline-color:var(--cedar)}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.005em;color:var(--ink);text-wrap:balance}
+h2{font-size:clamp(30px,7.6vw,48px)}
+p{margin:0;text-wrap:pretty}
+
+/* ---------- Bands ---------- */
+section{padding:64px 0}
+.on-paper{background:var(--paper)}
+.on-navy{background:var(--navy);color:var(--on-dark-soft)}
+.on-deep{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft)}
+.on-navy h2,.on-deep h2,.on-navy h3,.on-deep h3{color:var(--on-dark)}
+.accent{color:var(--cedar-ink)}
+.on-navy .accent,.on-deep .accent,.hero .accent{color:var(--cedar)}
+.head{display:grid;gap:16px;justify-items:start;max-width:640px}
+.lede{font-size:clamp(17px,4.6vw,19px);color:var(--soft);max-width:38ch}
+.on-navy .lede,.on-deep .lede{color:var(--on-dark-soft)}
+
+/* Eyebrow: a few key headings only. A label, not a button. */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 14px/1 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(19,33,58,.06);padding:9px 14px;border-radius:var(--pill)}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--cedar)}
+.hero .eyebrow,.on-navy .eyebrow,.on-deep .eyebrow{color:var(--on-dark);background:rgba(255,255,255,.12)}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}
+.btn:active{transform:scale(.98)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--cedar);color:var(--ink);border-color:var(--cedar)}
+.btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,247,251,.7)}
+
+/* ---------- Header ---------- */
+.top{background:var(--paper);color:var(--ink)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding-top:max(8px,env(safe-area-inset-top))}
+.brand{display:flex;flex-direction:column;justify-content:center;min-height:44px;text-decoration:none;line-height:1}
+.brand b{font:400 23px/1 var(--display);letter-spacing:.01em}
+.brand span{font:600 11px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
+.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
+.tel svg{width:18px;height:18px;flex:none;color:var(--cedar-ink)}
+
+/* ---------- Hero: their own deck under a navy overlay ---------- */
+.hero{padding:0;position:relative;isolation:isolate;background-color:var(--deep);color:var(--on-dark);overflow:hidden}
+/* phones: the photo runs taller than the band so the deck stairs land under the buttons, not the lawn */
+.hero-photo{position:absolute;top:0;left:0;z-index:-2;width:100%;height:138%;object-fit:cover;object-position:50% 0}
+/* dark where the words are, the deck's stairs showing through at the bottom */
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(19,31,53,.86) 0%,rgba(19,31,53,.8) 62%,rgba(19,31,53,.5) 100%)}
+.hero-copy{position:relative;display:grid;gap:20px;justify-items:start;padding-top:56px;padding-bottom:clamp(120px,34vw,180px)}
+.hero h1{color:#fff;font-size:clamp(42px,12vw,80px);line-height:1.02;max-width:12ch}
+/* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
+.hero h1 .w{display:inline-block;white-space:nowrap}
+.hero h1 .c{display:inline-block;opacity:0;transform:translateX(50px);animation:letter-in 1s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 20ms)}
+@keyframes letter-in{to{opacity:1;transform:none}}
+.promise{font-size:clamp(17px,4.7vw,20px);line-height:1.5;color:var(--on-dark-soft);max-width:32ch}
+.actions{display:grid;gap:12px;width:100%;margin-top:4px}
+
+/* ---------- Services: each row is the link; only its arrow changes ---------- */
+.rows{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:10px}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:10px 12px 10px 22px;background:rgba(255,255,255,.06);border-radius:18px;color:var(--on-dark);text-decoration:none;font:400 20px/1.2 var(--display)}
+.row:hover,.row:focus-visible{outline:none;background:rgba(255,255,255,.06);box-shadow:none}
+.arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);color:var(--on-dark);transition:background-color .2s,color .2s}
+.arrow svg{width:18px;height:18px}
+.row:focus-visible .arrow{background:var(--cedar);color:var(--ink);outline:3px solid var(--cedar);outline-offset:3px}
+
+/* ---------- Work ---------- */
+.work .wrap{display:grid;gap:28px}
+.work-photo{width:100%;height:auto;max-width:560px;aspect-ratio:1;object-fit:cover;border-radius:var(--r-card);background:var(--field)}
+.fb{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:76px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--navy);color:var(--on-dark);text-decoration:none;font:400 clamp(19px,5.2vw,22px)/1.2 var(--display);max-width:560px}
+.fb:hover,.fb:focus-visible{outline:none;box-shadow:none}
+.fb .lbl{display:flex;align-items:center;gap:14px}
+.fb .lbl svg{width:28px;height:28px;flex:none;color:var(--cedar)}
+.fb:focus-visible .arrow{background:var(--cedar);color:var(--ink);outline:3px solid var(--focus);outline-offset:3px}
+
+/* ---------- How it works ---------- */
+.steps{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:24px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s}
+.steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--cedar);color:var(--ink);font:400 20px/1 var(--display)}
+.steps b{display:block;font:400 21px/1.2 var(--display);color:var(--on-dark);margin-top:4px}
+.steps span{display:block;margin-top:4px}
+
+/* ---------- Form ---------- */
+.ask .wrap{display:grid;gap:28px}
+form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,32px);display:grid;gap:22px;max-width:600px}
+.field{display:grid;gap:8px;min-width:0}
+.field label,.field legend{font:400 17px/1.2 var(--display);color:var(--ink);padding:0}
+.field legend{margin-bottom:10px}
+.field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--focus);transition:border-color .15s}
+textarea{min-height:110px;resize:vertical}
+input::placeholder,textarea::placeholder{color:var(--soft)}
+input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
+.chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
+.chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:2px}
+.chips input:checked+label{background:var(--ink);color:#fff}
+.err{display:none;font-size:15px;color:var(--error)}
+.field.bad .err{display:block}
+.field.bad input[type=text],.field.bad textarea,.field.bad input[type=text]:focus{border-color:var(--error)}
+.field.bad .chips label{border-color:var(--error)}
+form .btn-primary{width:100%}
+form .btn-primary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.after{font-size:15px;color:var(--soft)}
+.sent{color:var(--ink);font-weight:600}
+.sent a{white-space:nowrap;display:inline-block;padding:11px 0;margin:-11px 0}
+@media (max-width:380px){.chips label{padding:0 14px}}
+
+/* ---------- Close ---------- */
+.close .who{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--on-dark-soft)}
+.bigtel{display:inline-flex;align-items:center;gap:12px;margin-top:28px;font:400 clamp(30px,9vw,52px)/1 var(--display);text-decoration:none;color:var(--on-dark);min-height:56px;white-space:nowrap}
+.bigtel svg{width:.8em;height:.8em;flex:none;color:var(--cedar)}
+.area{margin-top:22px;max-width:40ch}
+
+/* ---------- Footer ---------- */
+footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
+footer .wrap{display:grid;gap:14px}
+.nw{white-space:nowrap}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-dark);text-decoration:none}
+
+/* ---------- Floating text circle (one circle, never a bottom bar) ---------- */
+.float{position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--cedar);color:var(--ink);box-shadow:0 10px 28px rgba(10,20,38,.3);transform:translateY(120px);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.float.on{transform:none}
+.float svg{width:26px;height:26px}
+.float:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:50%}
+
+/* ---------- Motion: one fade-up, only for things below the first screen ---------- */
+.js .rise{transition:opacity .4s ease-out,transform .4s ease-out}
+.js .rise.below{opacity:0;transform:translateY(12px)}
+
+/* ---------- Desktop ---------- */
+@media (min-width:760px){
+  :root{--gutter:40px}
+  .top .wrap{min-height:76px}
+  .brand b{font-size:26px}
+  .tel{font-size:20px}
+  section{padding:96px 0}
+  .hero-copy{padding-top:104px;padding-bottom:120px}
+  .hero::after{background:linear-gradient(90deg,rgba(19,31,53,.9) 0%,rgba(19,31,53,.82) 50%,rgba(19,31,53,.45) 100%)}
+  .hero-photo{height:100%;object-position:50% 62%}
+  .promise{max-width:36ch}
+  .actions{grid-auto-flow:column;justify-content:start;width:auto}
+  .actions .btn{min-width:220px}
+  .rows{grid-template-columns:1fr 1fr;column-gap:16px}
+}
+@media (min-width:1024px){
+  .work .wrap{grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  .work .fb{margin-top:28px}
+  .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+  .ask .head{position:sticky;top:40px}
+  .close .wrap{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
+  .bigtel{margin-top:0}
+  .how .steps{grid-template-columns:repeat(3,1fr);gap:40px}
+  .steps b{font-size:22px}
+}
+/* hover styles only where there is a real pointer, so taps don't leave them stuck on */
+@media (hover:hover){
+.tel:hover{color:var(--cedar-ink)}
+.btn-primary:hover{background:var(--cedar-2);border-color:var(--cedar-2)}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.row:hover .arrow,.fb:hover .arrow{background:var(--cedar);color:var(--ink)}
+input[type=text]:hover,textarea:hover{border-color:var(--focus)}
+.chips label:hover{border-color:var(--focus)}
+form .btn-primary:hover{outline:2px solid var(--focus);outline-offset:2px}
+.sent a:hover{color:var(--focus)}
+.bigtel:hover{color:var(--cedar)}
+footer a:hover{color:var(--cedar)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rise,.float,.btn{transition:none}
+  .js .rise.below{opacity:1;transform:none}
+  .hero h1 .c{animation:none;opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: A family exterior-repair crew's site that earns trust through calm order (Ellie's calm band style, after lpmr.co.uk): their own deck behind the promise, a plain list of what they fix, and an easy way to ask for an estimate.
+OWN-WORLD: The deck in their Facebook photo: slate navy from its black rails (#1d3150, deep #131f35 with faint diagonal lines), off-white paper like the white posts, cedar (#e8a54b) from the composite boards as the one warm accent (fills only; #8a4c0e when it has to be text on light). Cal Sans display, system body at 16/1.7.
+STORY: The visitor sees who fixes the outside of homes in Cherry Hill, sees a deck they built, finds their problem in the list, and texts or calls for an estimate.
+FIRST VIEWPORT: Paper header, wordmark left, tap-to-call number top right. Hero over their deck under navy: eyebrow "Family owned and operated", "Exterior repairs done right in Cherry Hill", one promise line, two pill buttons (Get an estimate, Text us).
+FORM: calm band system with one real photo; service rows on navy; deck photo shown clearly once in "Our work" with the Facebook link under it.
+-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></symbol>
+</svg>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Balabros, back to top"><b>Balabros</b><span>Exterior home repairs</span></a>
+    <a class="tel" href="tel:+18569523135"><svg aria-hidden="true"><use href="#i-phone"/></svg>(856) 952-3135</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="hero" aria-labelledby="h1">
+  <img class="hero-photo" src="img/deck-800.webp" srcset="img/deck-800.webp 800w, img/deck.webp 1200w" sizes="100vw" alt="" width="1200" height="1200" fetchpriority="high">
+  <div class="wrap hero-copy">
+    <span class="eyebrow">Family owned and operated</span>
+    <h1 id="h1">Exterior repairs done right in <span class="accent">Cherry Hill</span></h1>
+    <p class="promise">We work on your home the way we'd work on our own, and we don't leave until it's right.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#ask">Get an estimate</a>
+      <a class="btn btn-ghost" data-sms href="sms:+18569523135?&amp;body=Hi%20Balabros%2C%20I%20found%20your%20website.%20I%20need%20help%20with%3A%20"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text us</a>
+    </div>
+  </div>
+</section>
+
+<section class="on-navy" id="services" aria-labelledby="h-svc">
+  <div class="wrap">
+    <div class="head rise">
+      <span class="eyebrow">What we fix</span>
+      <h2 id="h-svc">From the gutters <span class="accent">down to the deck.</span></h2>
+    </div>
+    <ul class="rows">
+      <li class="rise"><a class="row" href="#ask" data-service="Deck">Decks, repaired or built<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-service="Rotted boards">Rotted boards<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-service="Gutter cleaning">Gutter cleaning<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-service="Gutter guards">Gutter guards<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-service="Siding">Siding<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-service="Roof">Roofing<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-service="Chimney">Chimney resurfacing<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-service="Aluminum capping">Aluminum capping<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-service="Windows">Windows<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-service="Doors">Garage and entry doors<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="on-paper work" aria-labelledby="h-work">
+  <div class="wrap">
+    <img class="work-photo rise" src="img/deck-800.webp" srcset="img/deck-800.webp 800w, img/deck.webp 1200w" sizes="(min-width:1024px) 540px, calc(100vw - 40px)" alt="A two-level deck with brown composite boards, white posts and black metal railings, with stairs down to the lawn" width="1200" height="1200" loading="lazy" decoding="async">
+    <div class="rise">
+      <h2 id="h-work">Our work, up close.</h2>
+      <a class="fb" href="https://www.facebook.com/profile.php?id=61563918684986" rel="noopener" style="margin-top:24px">
+        <span class="lbl"><svg aria-hidden="true"><use href="#i-fb"/></svg>Click to see more of our work.</span>
+        <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="on-deep how" aria-labelledby="h-how">
+  <div class="wrap">
+    <h2 id="h-how" class="rise">How it <span class="accent">works.</span></h2>
+    <ol class="steps">
+      <li class="rise"><div><b>Text or call us.</b><span>Tell us what needs fixing. A photo helps.</span></div></li>
+      <li class="rise"><div><b>Get your estimate.</b><span>We look at the job and tell you plainly what it takes.</span></div></li>
+      <li class="rise"><div><b>We do it right.</b><span>Five-star craftsmanship, start to finish.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="on-paper ask" id="ask" aria-labelledby="h-ask">
+  <div class="wrap">
+    <div class="head rise">
+      <span class="eyebrow">Estimates</span>
+      <h2 id="h-ask">Tell us what needs fixing</h2>
+      <p class="lede">Not on our list? Ask anyway.</p>
+    </div>
+    <form id="fixForm" class="rise" novalidate>
+      <fieldset class="field" id="f-job">
+        <legend>What's it about?</legend>
+        <div class="chips">
+          <input type="radio" name="job" id="j-deck" value="Deck"><label for="j-deck">Deck</label>
+          <input type="radio" name="job" id="j-rot" value="Rotted boards"><label for="j-rot">Rotted boards</label>
+          <input type="radio" name="job" id="j-gc" value="Gutter cleaning"><label for="j-gc">Gutter cleaning</label>
+          <input type="radio" name="job" id="j-gg" value="Gutter guards"><label for="j-gg">Gutter guards</label>
+          <input type="radio" name="job" id="j-sid" value="Siding"><label for="j-sid">Siding</label>
+          <input type="radio" name="job" id="j-roof" value="Roof"><label for="j-roof">Roof</label>
+          <input type="radio" name="job" id="j-chim" value="Chimney"><label for="j-chim">Chimney</label>
+          <input type="radio" name="job" id="j-cap" value="Aluminum capping"><label for="j-cap">Capping</label>
+          <input type="radio" name="job" id="j-win" value="Windows"><label for="j-win">Windows</label>
+          <input type="radio" name="job" id="j-door" value="Doors"><label for="j-door">Doors</label>
+          <input type="radio" name="job" id="j-other" value="Something else"><label for="j-other">Something else</label>
+        </div>
+        <p class="err" id="e-job">Pick the closest one, or "Something else".</p>
+      </fieldset>
+      <div class="field" id="f-name">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" maxlength="60" placeholder="First name is fine" aria-describedby="e-name">
+        <p class="err" id="e-name">Add your name so we know who's texting.</p>
+      </div>
+      <div class="field">
+        <label for="where">Your town <small>(optional)</small></label>
+        <input type="text" id="where" name="where" autocomplete="address-level2" maxlength="60" placeholder="e.g. Cherry Hill">
+      </div>
+      <div class="field">
+        <label for="what">Anything we should know? <small>(optional)</small></label>
+        <textarea id="what" name="what" maxlength="600" placeholder="Soft boards on the stairs, gutter pulling away…"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to Balabros</button>
+      <p class="sent" id="sent" role="status" hidden>Didn't open your messages? Call us at <a href="tel:+18569523135">(856) 952-3135</a>.</p>
+      <p class="after">Opens your messages with this written out.</p>
+    </form>
+  </div>
+</section>
+
+<section class="on-navy close" id="close" aria-labelledby="h-close">
+  <div class="wrap">
+    <div class="rise">
+      <h2 id="h-close">Balabros</h2>
+      <p class="who">Family owned and operated.</p>
+      <p class="area">Based in Cherry Hill, NJ. Not sure we cover your street? Call and ask.</p>
+    </div>
+    <a class="bigtel rise" href="tel:+18569523135"><svg aria-hidden="true"><use href="#i-phone"/></svg>(856) 952-3135</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Balabros · Exterior home repairs<br>Cherry Hill, NJ · <span class="nw">(856) 952-3135</span></p>
+    <nav aria-label="Elsewhere">
+      <a href="https://www.facebook.com/profile.php?id=61563918684986" rel="noopener">Facebook</a>
+    </nav>
+  </div>
+</footer>
+
+<a class="float" id="float" data-sms href="sms:+18569523135?&amp;body=Hi%20Balabros%2C%20I%20found%20your%20website.%20I%20need%20help%20with%3A%20" aria-label="Text Balabros"><svg aria-hidden="true"><use href="#i-chat"/></svg></a>
+
+<script>
+/* ===== Config ===== */
+var CONFIG = {
+  PHONE: '+18569523135',
+  FLOAT: true  // the floating text circle; false removes it
+};
+document.documentElement.classList.add('js');
+
+/* ===== Hero H1 bounce-in: split into letters (JS only, so no-JS and reduced motion keep the plain heading) ===== */
+(function(){
+  var h=document.getElementById('h1');
+  if(!h||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var plain=h.innerHTML,i=0,last=null;
+  h.setAttribute('aria-label',h.textContent.replace(/\s+/g,' ').trim());
+  function split(node,into){
+    [].slice.call(node.childNodes).forEach(function(n){
+      if(n.nodeType===3){
+        n.textContent.split(/(\s+)/).forEach(function(part){
+          if(!part)return;
+          if(/^\s+$/.test(part)){into.appendChild(document.createTextNode(' '));return}
+          var w=document.createElement('span');w.className='w';w.setAttribute('aria-hidden','true');
+          for(var k=0;k<part.length;k++){var c=document.createElement('span');c.className='c';c.style.setProperty('--i',i++);c.textContent=part[k];w.appendChild(c);last=c}
+          into.appendChild(w);
+        });
+      }else if(n.nodeType===1){var copy=n.cloneNode(false);split(n,copy);into.appendChild(copy)}
+    });
+  }
+  var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);
+  // once the last letter lands, put the plain heading back so kerning and text selection return
+  if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label')});
+})();
+
+/* ===== Service rows pre-select the matching chip in the form ===== */
+(function(){
+  [].forEach.call(document.querySelectorAll('.row[data-service]'),function(a){
+    a.addEventListener('click',function(){
+      var r=document.querySelector('input[name=job][value="'+a.getAttribute('data-service')+'"]');
+      if(r){r.checked=true;document.getElementById('f-job').classList.remove('bad')}
+    });
+  });
+})();
+
+/* ===== Quote form: composes a text to Balabros ===== */
+(function(){
+  var form=document.getElementById('fixForm');if(!form)return;
+  function val(id){return document.getElementById(id).value.trim()}
+  form.addEventListener('input',function(e){var f=e.target.closest('.field');if(f&&f.classList.contains('bad')&&(e.target.type==='radio'||e.target.value.trim()))f.classList.remove('bad')});
+  form.addEventListener('change',function(e){if(e.target.name==='job')document.getElementById('f-job').classList.remove('bad')});
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var job=form.querySelector('input[name=job]:checked'),name=val('name'),where=val('where'),what=val('what');
+    var fj=document.getElementById('f-job'),fn=document.getElementById('f-name'),ni=document.getElementById('name');
+    fj.classList.toggle('bad',!job);fn.classList.toggle('bad',!name);ni.setAttribute('aria-invalid',name?'false':'true');
+    if(!job){form.querySelector('input[name=job]').focus();return}
+    if(!name){ni.focus();return}
+    var msg='Hi Balabros, this is '+name+'. I\'d like an estimate.\nJob: '+job.value;
+    if(where)msg+='\nTown: '+where;
+    if(what)msg+='\n'+what;
+    location.href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
+    // if no messages app opened (desktop, some in-app browsers), say what to do instead
+    setTimeout(function(){document.getElementById('sent').hidden=false},900);
+  });
+})();
+
+/* ===== Floating text circle: shows after the hero, hides while the form is on screen ===== */
+(function(){
+  var fl=document.getElementById('float');if(!fl)return;
+  if(!CONFIG.FLOAT||!('IntersectionObserver' in window)){fl.remove();return}
+  var pastHero=false,formIn=false;
+  function sync(){var on=pastHero&&!formIn;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
+  new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
+  new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.getElementById('fixForm'));
+  sync();
+})();
+
+/* ===== Fade-up: everything is visible at rest; only what starts below the first screen rises 12px in ===== */
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('below');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(document.querySelectorAll('.rise'),function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('below');io.observe(el)}});
+})();
+</script>
+</body>
+</html>
