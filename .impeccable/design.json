@@ -1,0 +1,479 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T14:13:21+00:00",
+  "title": "Design System: Balabros",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Post Paper",
+        "canonical": "oklch(97.3% 0.007 269)",
+        "tonalRamp": [
+          "oklch(15% 0.004 269)",
+          "oklch(26% 0.007 269)",
+          "oklch(37% 0.007 269)",
+          "oklch(48% 0.007 269)",
+          "oklch(59% 0.007 269)",
+          "oklch(70% 0.007 269)",
+          "oklch(82% 0.007 269)",
+          "oklch(95% 0.004 269)"
+        ]
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "Card White",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": [
+          "oklch(15% 0.000 0)",
+          "oklch(26% 0.000 0)",
+          "oklch(37% 0.000 0)",
+          "oklch(48% 0.000 0)",
+          "oklch(59% 0.000 0)",
+          "oklch(70% 0.000 0)",
+          "oklch(82% 0.000 0)",
+          "oklch(95% 0.000 0)"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field Tint",
+        "canonical": "oklch(94.1% 0.014 258)",
+        "tonalRamp": [
+          "oklch(15% 0.008 258)",
+          "oklch(26% 0.014 258)",
+          "oklch(37% 0.014 258)",
+          "oklch(48% 0.014 258)",
+          "oklch(59% 0.014 258)",
+          "oklch(70% 0.014 258)",
+          "oklch(82% 0.014 258)",
+          "oklch(95% 0.008 258)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(24.9% 0.052 261)",
+        "tonalRamp": [
+          "oklch(15% 0.031 261)",
+          "oklch(26% 0.052 261)",
+          "oklch(37% 0.052 261)",
+          "oklch(48% 0.052 261)",
+          "oklch(59% 0.052 261)",
+          "oklch(70% 0.052 261)",
+          "oklch(82% 0.052 261)",
+          "oklch(95% 0.031 261)"
+        ]
+      },
+      "body": {
+        "role": "neutral",
+        "displayName": "Body Slate",
+        "canonical": "oklch(34.3% 0.038 252)",
+        "tonalRamp": [
+          "oklch(15% 0.023 252)",
+          "oklch(26% 0.038 252)",
+          "oklch(37% 0.038 252)",
+          "oklch(48% 0.038 252)",
+          "oklch(59% 0.038 252)",
+          "oklch(70% 0.038 252)",
+          "oklch(82% 0.038 252)",
+          "oklch(95% 0.023 252)"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Soft Slate",
+        "canonical": "oklch(45.5% 0.032 252)",
+        "tonalRamp": [
+          "oklch(15% 0.019 252)",
+          "oklch(26% 0.032 252)",
+          "oklch(37% 0.032 252)",
+          "oklch(48% 0.032 252)",
+          "oklch(59% 0.032 252)",
+          "oklch(70% 0.032 252)",
+          "oklch(82% 0.032 252)",
+          "oklch(95% 0.019 252)"
+        ]
+      },
+      "navy": {
+        "role": "secondary",
+        "displayName": "Rail Navy",
+        "canonical": "oklch(31.3% 0.062 259)",
+        "tonalRamp": [
+          "oklch(15% 0.037 259)",
+          "oklch(26% 0.062 259)",
+          "oklch(37% 0.062 259)",
+          "oklch(48% 0.062 259)",
+          "oklch(59% 0.062 259)",
+          "oklch(70% 0.062 259)",
+          "oklch(82% 0.062 259)",
+          "oklch(95% 0.037 259)"
+        ]
+      },
+      "deep": {
+        "role": "secondary",
+        "displayName": "Deep Rail",
+        "canonical": "oklch(24.0% 0.046 262)",
+        "tonalRamp": [
+          "oklch(15% 0.028 262)",
+          "oklch(26% 0.046 262)",
+          "oklch(37% 0.046 262)",
+          "oklch(48% 0.046 262)",
+          "oklch(59% 0.046 262)",
+          "oklch(70% 0.046 262)",
+          "oklch(82% 0.046 262)",
+          "oklch(95% 0.028 262)"
+        ]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "On Dark",
+        "canonical": "oklch(97.4% 0.006 255)",
+        "tonalRamp": [
+          "oklch(15% 0.004 255)",
+          "oklch(26% 0.006 255)",
+          "oklch(37% 0.006 255)",
+          "oklch(48% 0.006 255)",
+          "oklch(59% 0.006 255)",
+          "oklch(70% 0.006 255)",
+          "oklch(82% 0.006 255)",
+          "oklch(95% 0.004 255)"
+        ]
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "On Dark Soft",
+        "canonical": "oklch(86.6% 0.025 258)",
+        "tonalRamp": [
+          "oklch(15% 0.015 258)",
+          "oklch(26% 0.025 258)",
+          "oklch(37% 0.025 258)",
+          "oklch(48% 0.025 258)",
+          "oklch(59% 0.025 258)",
+          "oklch(70% 0.025 258)",
+          "oklch(82% 0.025 258)",
+          "oklch(95% 0.015 258)"
+        ]
+      },
+      "cedar": {
+        "role": "primary",
+        "displayName": "Deck Cedar",
+        "canonical": "oklch(77.0% 0.131 71)",
+        "tonalRamp": [
+          "oklch(15% 0.079 71)",
+          "oklch(26% 0.131 71)",
+          "oklch(37% 0.131 71)",
+          "oklch(48% 0.131 71)",
+          "oklch(59% 0.131 71)",
+          "oklch(70% 0.131 71)",
+          "oklch(82% 0.131 71)",
+          "oklch(95% 0.079 71)"
+        ]
+      },
+      "cedar-2": {
+        "role": "primary",
+        "displayName": "Cedar Light",
+        "canonical": "oklch(81.6% 0.115 75)",
+        "tonalRamp": [
+          "oklch(15% 0.069 75)",
+          "oklch(26% 0.115 75)",
+          "oklch(37% 0.115 75)",
+          "oklch(48% 0.115 75)",
+          "oklch(59% 0.115 75)",
+          "oklch(70% 0.115 75)",
+          "oklch(82% 0.115 75)",
+          "oklch(95% 0.069 75)"
+        ]
+      },
+      "cedar-ink": {
+        "role": "primary",
+        "displayName": "Cedar Ink",
+        "canonical": "oklch(48.1% 0.108 58)",
+        "tonalRamp": [
+          "oklch(15% 0.065 58)",
+          "oklch(26% 0.108 58)",
+          "oklch(37% 0.108 58)",
+          "oklch(48% 0.108 58)",
+          "oklch(59% 0.108 58)",
+          "oklch(70% 0.108 58)",
+          "oklch(82% 0.108 58)",
+          "oklch(95% 0.065 58)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "canonical": "rgba(19,33,58,.12)"
+      },
+      "focus": {
+        "role": "tertiary",
+        "displayName": "Field Blue",
+        "canonical": "oklch(47.9% 0.117 257)",
+        "tonalRamp": [
+          "oklch(15% 0.070 257)",
+          "oklch(26% 0.117 257)",
+          "oklch(37% 0.117 257)",
+          "oklch(48% 0.117 257)",
+          "oklch(59% 0.117 257)",
+          "oklch(70% 0.117 257)",
+          "oklch(82% 0.117 257)",
+          "oklch(95% 0.070 257)"
+        ]
+      },
+      "error": {
+        "role": "tertiary",
+        "displayName": "Error Red",
+        "canonical": "oklch(50.1% 0.178 29)",
+        "tonalRamp": [
+          "oklch(15% 0.107 29)",
+          "oklch(26% 0.178 29)",
+          "oklch(37% 0.178 29)",
+          "oklch(48% 0.178 29)",
+          "oklch(59% 0.178 29)",
+          "oklch(70% 0.178 29)",
+          "oklch(82% 0.178 29)",
+          "oklch(95% 0.107 29)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero H1 only; letter bounce-in."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section H2s and the close-band phone number."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service rows, step titles, buttons, header number, wordmark."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "One sentence under a heading; the hero promise."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text and inputs, 16/1.7."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Form labels and legends."
+      }
+    },
+    "shadows": [
+      {
+        "name": "float-lift",
+        "value": "0 10px 28px rgba(10,20,38,.3)",
+        "purpose": "Floating text circle only."
+      }
+    ],
+    "textures": [
+      {
+        "name": "deep-lines",
+        "value": "repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)",
+        "purpose": "Deep band and footer only; 3.5% white or fainter."
+      }
+    ],
+    "overlays": [
+      {
+        "name": "hero-phone",
+        "value": "linear-gradient(180deg,rgba(19,31,53,.86) 0%,rgba(19,31,53,.8) 62%,rgba(19,31,53,.5) 100%)",
+        "purpose": "Navy overlay over the hero photo on phones."
+      },
+      {
+        "name": "hero-desktop",
+        "value": "linear-gradient(90deg,rgba(19,31,53,.9) 0%,rgba(19,31,53,.82) 50%,rgba(19,31,53,.45) 100%)",
+        "purpose": "Navy overlay over the hero photo from 760px."
+      }
+    ],
+    "focus": [
+      {
+        "name": "focus-light",
+        "value": "outline:3px solid #2f5d9e;outline-offset:3px",
+        "purpose": "Paper and card."
+      },
+      {
+        "name": "focus-dark",
+        "value": "outline:3px solid #e8a54b;outline-offset:3px",
+        "purpose": "Navy, deep, hero, footer."
+      }
+    ],
+    "motion": [
+      {
+        "name": "letter-in",
+        "value": "1s cubic-bezier(.34,1.56,.64,1), from opacity 0 translateX(50px), 20ms stagger per letter",
+        "purpose": "Hero H1 only; skipped under reduced motion and without JS."
+      },
+      {
+        "name": "rise",
+        "value": "opacity/transform .4s ease-out, from translateY(12px)",
+        "purpose": "Fade-up for elements that start below the first screen only."
+      },
+      {
+        "name": "float-slide",
+        "value": "transform .35s cubic-bezier(.2,.8,.2,1), from translateY(120px)",
+        "purpose": "Floating text circle in/out."
+      },
+      {
+        "name": "state",
+        "value": ".2s colour transitions; .15s on form controls; scale(.98) press over .12s",
+        "purpose": "Buttons, arrows, fields, chips."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "no smooth scroll, no rise, no float/button transitions, H1 shown at rest",
+        "purpose": "prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "760px"
+      },
+      {
+        "name": "desktop",
+        "value": "1024px"
+      },
+      {
+        "name": "narrow-chips",
+        "value": "max-width:380px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Cedar pill, ink text; the main estimate action and the form submit.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Get an estimate</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 \"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-btn-primary{background:#e8a54b;color:#13213a;border-color:#e8a54b}.ds-btn-primary:hover{background:#f0b866;border-color:#f0b866}.ds-btn-primary:focus-visible{outline:3px solid #2f5d9e;outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Outlined pill on the hero overlay; secondary \"Text us\".",
+      "html": "<div style=\"background:#131f35;padding:24px\"><a class=\"ds-btn-ghost\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Text us</a></div>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 \"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;text-decoration:none;background:transparent;color:#f4f7fb;border:2px solid rgba(244,247,251,.7);transition:background-color .2s,border-color .2s}.ds-btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}.ds-btn-ghost:focus-visible{outline:3px solid #e8a54b;outline-offset:3px}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "description": "Slim paper bar: wordmark left, tap-to-call number right.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><b>Balabros</b><span>Exterior home repairs</span></a><a class=\"ds-tel\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>(856) 952-3135</a></header>",
+      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:0 20px;background:#f4f6fb;color:#13213a}.ds-brand{display:flex;flex-direction:column;text-decoration:none;color:inherit;line-height:1}.ds-brand b{font:400 23px/1 \"Cal Sans\",\"Avenir Next\",system-ui,sans-serif;letter-spacing:.01em}.ds-brand span{font:600 11px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#4a5868;margin-top:5px}.ds-tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;font:400 17px/1 \"Cal Sans\",\"Avenir Next\",system-ui,sans-serif;text-decoration:none;color:inherit;white-space:nowrap}.ds-tel svg{width:18px;height:18px;color:#8a4c0e}.ds-tel:hover{color:#8a4c0e}.ds-tel:focus-visible{outline:3px solid #2f5d9e;outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Whole-row link on navy; only the arrow circle fills cedar on hover/focus.",
+      "html": "<div style=\"background:#1d3150;padding:20px\"><a class=\"ds-row\" href=\"#\">Gutter cleaning<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></div>",
+      "css": ".ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:10px 12px 10px 22px;background:rgba(255,255,255,.06);border-radius:18px;color:#f4f7fb;text-decoration:none;font:400 20px/1.2 \"Cal Sans\",\"Avenir Next\",system-ui,sans-serif}.ds-row:hover,.ds-row:focus-visible{outline:none;box-shadow:none}.ds-arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);color:#f4f7fb;transition:background-color .2s,color .2s}.ds-arrow svg{width:18px;height:18px}.ds-row:hover .ds-arrow{background:#e8a54b;color:#13213a}.ds-row:focus-visible .ds-arrow{background:#e8a54b;color:#13213a;outline:3px solid #e8a54b;outline-offset:3px}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Tinted borderless field on the white form card; focus-blue border on hover/focus.",
+      "html": "<div style=\"background:#fff;padding:24px;border-radius:24px\"><label class=\"ds-label\" for=\"ds-n\">Your name</label><input class=\"ds-input\" id=\"ds-n\" placeholder=\"First name is fine\"></div>",
+      "css": ".ds-label{display:block;margin-bottom:8px;font:400 17px/1.2 \"Cal Sans\",\"Avenir Next\",system-ui,sans-serif;color:#13213a}.ds-input{width:100%;font:16px/1.4 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Arial,sans-serif;color:#13213a;background:#e6ecf5;border:2px solid transparent;border-radius:10px;padding:13px 14px;min-height:52px;caret-color:#2f5d9e;transition:border-color .15s}.ds-input::placeholder{color:#4a5868}.ds-input:hover,.ds-input:focus{outline:none;border-color:#2f5d9e}"
+    },
+    {
+      "name": "Job Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Radio chip for the job type; selected fills ink.",
+      "html": "<div class=\"ds-chips\"><input type=\"radio\" name=\"dsj\" id=\"dsj1\"><label for=\"dsj1\">Deck</label><input type=\"radio\" name=\"dsj\" id=\"dsj2\" checked><label for=\"dsj2\">Gutter cleaning</label><input type=\"radio\" name=\"dsj\" id=\"dsj3\"><label for=\"dsj3\">Siding</label></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:10px;background:#fff;padding:16px}.ds-chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}.ds-chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;background:#e6ecf5;border:2px solid transparent;font:16px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Arial,sans-serif;color:#13213a;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}.ds-chips label:hover{border-color:#2f5d9e}.ds-chips input:focus-visible+label{outline:3px solid #2f5d9e;outline-offset:2px}.ds-chips input:checked+label{background:#13213a;color:#fff}"
+    },
+    {
+      "name": "Numbered Step",
+      "kind": "custom",
+      "refersTo": "step-number",
+      "description": "Cedar counter circle with a Cal Sans title on the textured deep band.",
+      "html": "<ol class=\"ds-steps\"><li><div><b>Text or call us.</b><span>Tell us what needs fixing. A photo helps.</span></div></li><li><div><b>Get your estimate.</b><span>We look at the job and tell you plainly what it takes.</span></div></li></ol>",
+      "css": ".ds-steps{list-style:none;margin:0;padding:24px;display:grid;gap:24px;counter-reset:s;background-color:#131f35;background-image:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);color:#c9d4e4;font:16px/1.7 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Arial,sans-serif}.ds-steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;counter-increment:s}.ds-steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#e8a54b;color:#13213a;font:400 20px/1 \"Cal Sans\",\"Avenir Next\",system-ui,sans-serif}.ds-steps b{display:block;font:400 21px/1.2 \"Cal Sans\",\"Avenir Next\",system-ui,sans-serif;color:#f4f7fb;margin-top:4px}.ds-steps span{display:block;margin-top:4px}"
+    },
+    {
+      "name": "Floating Text Circle",
+      "kind": "button",
+      "refersTo": "float-text",
+      "description": "60px cedar circle opening a pre-filled SMS; appears after the hero, hides near the form.",
+      "html": "<a class=\"ds-float\" href=\"#\" aria-label=\"Text Balabros\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-float{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:#e8a54b;color:#13213a;box-shadow:0 10px 28px rgba(10,20,38,.3);transition:transform .35s cubic-bezier(.2,.8,.2,1)}.ds-float svg{width:26px;height:26px}.ds-float:focus-visible{outline:3px solid #2f5d9e;outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Finished Deck",
+    "overview": "**Creative North Star: \"The Finished Deck\"**\n\nEvery colour on the page is lifted from the one photo the crew has: their own two-level deck. Slate navy comes from its black rails, the off-white paper from its white posts, and cedar from the composite boards. The page reads like that deck: plain, level, solidly put together, with one warm material doing all the accent work. Order is how it earns trust. Full-bleed bands alternate light and dark so each section starts visibly, shapes are soft and borderless, and nothing moves except the hero headline arriving and a quiet rise as content scrolls in.\n\nDensity is low and phone-first. One column, a 20px gutter, big tap targets, and a single action in reach at all times (header number, hero buttons, the form, or the floating text circle; never two of the same at once). The real photo appears twice: under a heavy navy overlay in the hero, and shown clearly once in \"Our work\".\n\nThis is Ellie's calm band house style (after lpmr.co.uk), instantiated with this client's own colours.",
+    "keyCharacteristics": [
+      "Paper, navy and deep-navy bands, full bleed, alternating so each new section is obvious.",
+      "Cedar is the only warm colour and it is a fill; text on it is ink.",
+      "Cal Sans for every heading, label and number; the system stack for running text.",
+      "Soft, borderless geometry: pills, 24px cards, tinted fields with no border.",
+      "Flat surfaces. The one shadow belongs to the floating text circle.",
+      "Motion is two gestures only: the hero H1 bounce-in and a 12px fade-up."
+    ],
+    "rules": [
+      {
+        "name": "The Cedar Is a Fill Rule",
+        "body": "Cedar is a surface, never text on a light ground (1.96:1 on paper). On light, the accent as text is always `cedar-ink`; text on any cedar fill is always `ink`, never white.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Blues Rule",
+        "body": "Navy is a surface; `focus` is behaviour. Focus and hover outlines on light grounds are `focus` blue; on navy, deep, the hero and the footer they switch to cedar. Never use cedar as a focus ring on paper or the card.",
+        "section": "colors"
+      },
+      {
+        "name": "The Accent Phrase Rule",
+        "body": "A heading may set its last phrase in the accent colour (`cedar` on dark, `cedar-ink` on paper). One phrase per heading, never the whole heading.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Display Face Rule",
+        "body": "Cal Sans at 400 for everything display-like; no bold display weights, no second webfont, no second body font.",
+        "section": "typography"
+      },
+      {
+        "name": "The Alternating Band Rule",
+        "body": "Adjacent sections never share a band colour; the band change is the section divider. No rules, borders or dividers between sections.",
+        "section": "layout"
+      },
+      {
+        "name": "The Faint Texture Rule",
+        "body": "The line texture lives only on `deep` and stays at 3.5% white or fainter so it never reads as lines through text.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Bands Rule",
+        "body": "Nothing on a band casts a shadow. The only element allowed to float is the floating text circle.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** take every new colour decision from the existing tokens; cedar stays the only warm colour.",
+      "**Do** use `cedar-ink` for accent text on paper and `ink` for text on any cedar fill.",
+      "**Do** alternate bands (paper, navy, paper, deep) so a new section is obvious without dividers.",
+      "**Do** keep the line texture on `deep` only, at `rgba(255,255,255,.035)` or fainter.",
+      "**Do** make the whole row the link and let only its arrow circle change on hover and focus.",
+      "**Do** switch focus rings to cedar on navy, deep, hero and footer, and keep them `focus` blue on paper and the card.",
+      "**Do** keep tap targets at 44px or more and inputs at 16px or more.",
+      "**Do** keep content visible at rest; motion only adds, never hides content that starts on the first screen.",
+      "**Do** put hover styles inside `@media (hover:hover)`."
+    ],
+    "donts": [
+      "**Don't** set cedar as text on paper or white (1.96:1), and don't put white text on cedar.",
+      "**Don't** use a black page ground or add a second accent colour.",
+      "**Don't** add shadows to bands, cards, rows or buttons; the floating circle is the only lifted element.",
+      "**Don't** add a second webfont, a bold display weight or a second body font.",
+      "**Don't** give any heading other than the hero H1 a letter animation, and don't add parallax, carousels or counters.",
+      "**Don't** add hover backgrounds, outlines or shadows to whole service rows or the Facebook row.",
+      "**Don't** add a call button to the hero or a sticky bottom bar; the number lives in the header and the text action in the floating circle.",
+      "**Don't** stretch photos; `object-fit: cover` only."
+    ]
+  }
+}
